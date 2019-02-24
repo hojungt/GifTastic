@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    background-image: linear-gradient(to bottom right, red, blue);
+    color: white;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.5em;
+    padding: 20px;
+
+}
+
+h4 {
+    text-align: center;
+
+}
+
+p {
+    color: #777777;
+}
+
+#topic-input {
+    
+}
+
+#add-topic {
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+#add-topic:hover {
+
+}
+
+.topic-btn {
+    width: 15%;
+    color: white;
+    background-color:#6f2d91;
+    border: none;
+    margin: 2px 2px 2px 2px;
+}
+
+.topic-btn:hover {
+    color: white;
+    background-color: #2d4191;
+    border: none;
+}
+
+#gifs-view {
+    
+}

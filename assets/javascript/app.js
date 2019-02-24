@@ -80,12 +80,12 @@ $(document).on('click', '.topic-btn', showGif);
 $(document).on('click', '.gif-image', function () {
     var source;
     var currentState = $(this).data('state');
-    if (currentState == false)
+    if (currentState === false)
     {
         source = $(this).data('animated');
         $(this).data('state', true);
     }
-    if (currentState == true)
+    if (currentState === true)
     {
         source = $(this).data('still');
         $(this).data('state', false);
