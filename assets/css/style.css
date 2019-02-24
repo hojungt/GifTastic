@@ -92,11 +92,21 @@ footer {
     background-color: #222222;
     color: grey;
     text-align: center;
-    padding-top: 10px;
 }
 
 h6 {
     font-size: .75em;
+}
+
+.nav-link {
+    text-align: center;
+    font-size: .75em;
+    margin-bottom: 10px;
+    background-color: #444444;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 a {

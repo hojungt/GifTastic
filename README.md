@@ -1,6 +1,6 @@
 # __Giftastic!__
 ### Get a selection of gifs on your choice
-[Github] 
+[Github] https://hojungt.github.io/GifTastic/
 ##### * 10 images are generated per topic selected.
 ##### * images will be animated when clicked.
 ##### * User can dynamically add topics of his/her interest.
