@@ -9,9 +9,26 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
 </head>
 <body>
-    <div>
+    
+    <div class="container">
+        <h1>Giftastic!</h1>
 
+        <!-- Buttons to be dumped here -->
+        <div id="topic-buttons"></div>
+
+        <form id="button-form">
+            <label for="topic-input">I want GIFs with: </label>
+            <input type="text" id="topic-input">
+            <br>
+        
+            <!-- Button for adding new topics -->
+            <input id="add-topic" type="submit" value="Show Me!">
+        </form>
+
+        <!-- GIFs to be dumped here -->
+        <div id="movies-view"></div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/javascript/app.js"></script>
 </body>
