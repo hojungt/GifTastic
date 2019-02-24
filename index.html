@@ -12,21 +12,27 @@
     
     <div class="container">
         <h1>Giftastic!</h1>
+        <h4>click on image to animate it</h4>
 
         <!-- Buttons to be dumped in here -->
         <div id="topic-buttons"></div>
 
-        <form id="button-form">
-            <label for="topic-input">I want GIFs with: </label>
-            <input type="text" id="topic-input">
-            <br>
-        
-            <!-- Button for adding new topics -->
-            <input id="add-topic" type="submit" value="Show Me!">
-        </form>
-
-        <!-- GIFs to be dumped in here -->
-        <div id="gifs-view"></div>
+        <div class="row">
+            <div class="col-md-9">
+                <!-- GIFs to be dumped in here -->
+                <div id="gifs-view"></div>
+            </div>
+            <div class="col-md-3">
+                <form id="button-form">
+                    <label for="topic-input">Add Animal: </label>
+                    <input type="text" id="topic-input">
+                    <br>
+                
+                    <!-- Button for adding new topics -->
+                    <input id="add-topic" type="submit" value="Show Me!">
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

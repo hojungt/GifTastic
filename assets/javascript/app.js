@@ -1,6 +1,6 @@
 // 1. DEFINING VAR AND FUNCTIONS
 // Array - list of topics interested
-var topics = ['dog', 'cat', 'rabbit', 'hamster', 'parrot', 'goldfish', 'horse', 'deer', 'llama', 'penguin', 'skunk', 'turtle'];
+var topics = ['dog', 'cat', 'rabbit', 'hamster', 'bird', 'owl', 'parrot', 'goldfish', 'horse', 'deer', 'llama', 'penguin', 'skunk', 'turtle'];
 
 // Function - rendering buttons for each topic
 function renderButtons() {
@@ -21,6 +21,7 @@ function showGif() {
     var topic = $(this).attr('data-name');
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=ZfldcbzIBP17P6wE4Y7ZmZ1aenoKzWar&limit=10";
 
+    // ajax method to connect to GIPHY API
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -30,17 +31,24 @@ function showGif() {
 
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
-            var animalDiv = $('<div>');
-            var animalImage = $('<img>');
+            var topicDiv = $('<div>');
+            var topicImage = $('<img>');
 
-            animalImage.attr('src', results[i].images.fixed_height.url);
-            animalDiv.append(animalImage);       
+            // add attributes of source, animate url, still url, and data-state to each image
+            // to control animate vs. still image-state
+            // (courtesy of classmate)
+            topicImage.addClass('gif-image');
+            topicImage.attr('src', results[i].images.fixed_height_still.url);
+            topicImage.attr('data-animated', results[i].images.fixed_height.url);
+            topicImage.attr('data-still', results[i].images.fixed_height_still.url);
+            topicImage.attr('data-state', false);
+            topicDiv.append(topicImage);       
 
             var rating = response.data[i].rating;
             var ratingText = $("<p>").text("Rating: " + rating);
-            animalDiv.append(ratingText);
+            topicDiv.append(ratingText);
 
-            $('#gifs-view').append(animalDiv);
+            $('#gifs-view').append(topicDiv);
         }
     });
 }
@@ -68,5 +76,22 @@ $(document).on('click', '.topic-btn', function(){
 // Display gifs when pick a new topic
 $(document).on('click', '.topic-btn', showGif);
 
-// Create all buttons on pagel
+// Image-state checker
+$(document).on('click', '.gif-image', function () {
+    var source;
+    var currentState = $(this).data('state');
+    if (currentState == false)
+    {
+        source = $(this).data('animated');
+        $(this).data('state', true);
+    }
+    if (currentState == true)
+    {
+        source = $(this).data('still');
+        $(this).data('state', false);
+    }
+    $(this).attr('src', source);
+});
+
+// Create all buttons on page
 renderButtons();  
