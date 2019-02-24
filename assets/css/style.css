@@ -1,45 +1,61 @@
 body {
     background-color: black;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-h1 {
+header {
+    border-bottom: solid blue 2px;
+    margin-bottom: 20px;
+}
+
+#logo {
     text-align: center;
     background-image: linear-gradient(to bottom right, red, blue);
     color: white;
     font-family: 'Bungee Shade', cursive;
     font-size: 2.5em;
     padding: 20px;
-
 }
 
-h4 {
+/* search form */
+
+form {
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
-
-}
-
-p {
-    color: #777777;
+    color: grey;
+    border: solid #6f2d91 1px;
 }
 
 #topic-input {
-    
+    color: white;
+    background-color:black;
+    border: none;
+    border-bottom: solid grey 1px;
 }
 
 #add-topic {
     color: white;
     background-color: black;
     border: none;
+    font-weight: bold;
 }
 
 #add-topic:hover {
-
+    color: grey;
+    background-color: black;
+    border: none;
+    font-weight: bold;
 }
 
+/* topic buttons */
+
 .topic-btn {
-    width: 15%;
+    font-family: 'Bungee', cursive;
     color: white;
     background-color:#6f2d91;
     border: none;
+    padding: 5px 15px 5px 15px;
     margin: 2px 2px 2px 2px;
 }
 
@@ -49,6 +65,45 @@ p {
     border: none;
 }
 
+/* gif results */
+
+#gifs-dump {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
 #gifs-view {
-    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gif-box {
+    margin: 5px;
+}
+
+p {
+    color: #444444;
+}
+
+/* footer */
+
+footer {
+    background-color: #222222;
+    color: grey;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
 }

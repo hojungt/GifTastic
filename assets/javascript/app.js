@@ -42,6 +42,7 @@ function showGif() {
             topicImage.attr('data-animated', results[i].images.fixed_height.url);
             topicImage.attr('data-still', results[i].images.fixed_height_still.url);
             topicImage.attr('data-state', false);
+            topicDiv.addClass('gif-box')
             topicDiv.append(topicImage);       
 
             var rating = response.data[i].rating;

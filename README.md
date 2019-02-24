@@ -14,8 +14,9 @@
 
 ## Credits
 #### Many thanks to Michael Russo (Course Instructor) for the fun implementation of API. Also, credits to Henry Chen (classmate) for providing insights to making still vs animated image with his well-thought code.
-#### All still-images and gifs are from the GIPHY API!
-#### All fonts are from Google Fonts!
+#### Credits to GIPHY API for all still-images and animated gifs.
+#### Credits to Google Fonts and Font Awesome for all text-style used.
+#### Credits to Icon8 for web icon.
 
 ## Notes
 #### This is part of an ongoing school project. Comments and feedbacks are much appreciated! :+1:

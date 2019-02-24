@@ -6,35 +6,49 @@
     <title>GIFTASTIC!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Titillium+Web" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Titillium+Web" rel="stylesheet">    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
     <link rel="icon" href="./assets/image/icon.png">
 </head>
 <body>
-    
-    <div class="container">
-        <h1>Giftastic!</h1>
+    <header>
+        <div class="container">
+            <div row="col-md-12" id=logo>
+                <h1><i class="fas fa-magic"></i>  Giftastic!  <i class="fas fa-magic"></i></h1>
+            </div>
+        </div>
+    </header>
 
-        <!-- Buttons to be dumped in here -->
-        <div id="topic-buttons"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">            
+                <!-- Buttons to be dumped in here -->
+                <div id="topic-buttons"></div>
+            </div>
+        </div>
 
         <div class="row">
-            <div class="col-md-9">
-                <!-- GIFs to be dumped in here -->
-                <div id="gifs-view"></div>
-            </div>
-            <div class="col-md-3">
-                <form id="button-form">
-                    <label for="topic-input">Add Animal: </label>
-                    <input type="text" id="topic-input">
-                    <br>
-                
+            <div class="col-md-12">
+                <form>
+                    <label for="topic-input"><i class="fas fa-search"></i></label>
+                    <input type="text" id="topic-input" placeholder="Search">
                     <!-- Button for adding new topics -->
-                    <input id="add-topic" type="submit" value="Show Me!">
+                    <input id="add-topic" type="submit" value="show me!">
                 </form>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-12" id="gifs-dump">
+                <!-- GIFs to be dumped in here -->
+                <div id="gifs-view"></div>
+            </div>
+        </div>
     </div>
+
+    <footer class="fixed-bottom">
+        <h6>Copyright &copy; See more at <a href="https://giphy.com/">GIPHY</a></h6>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/javascript/app.js"></script>
