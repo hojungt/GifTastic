@@ -1,22 +1,34 @@
 # __Giftastic!__
-### Get a selection of gifs on your choice
-[Github] https://hojungt.github.io/GifTastic/
-##### * 10 images are generated per topic selected.
-##### * images will be animated when clicked.
-##### * User can dynamically add topics of his/her interest.
+#### [__Giftastic__](https://hojungt.github.io/GifTastic/) is a dynamic web app that allows user to get a selection of gifs per his/her choice. 
 
-## What Is the Goal of This Project?
-#### Creating an app that runs in the browser and feature dynamically updated HTML and CSS powered by JavaScript and JQuery code.
-#### Using ajax method to retrieve objects from GIPHY API.
+![](/asset/image/screenshot.png)
 
-## Who Can Use this Repo?
-#### Anyone! :tada:
+### Application Feature
+1. Click on any category button at the top of page. 10 gifs will be generated below the search bar.
+2. When a new category button is clicked, the images will be refreshed per new category chosen.
+3. Click on any image to animate it.
+4. Enter a new category in search bar to add a topic of interest. Be creative!
 
-## Credits
-#### Many thanks to Michael Russo (Course Instructor) for the fun implementation of API. Also, credits to Henry Chen (classmate) for providing insights to making still vs animated image with his well-thought code.
-#### Credits to GIPHY API for all still-images and animated gifs.
-#### Credits to Google Fonts and Font Awesome for all text-style used.
-#### Credits to Icon8 for web icon.
+### Project Goal
+Using AJAX method to retrieve objects, the app implements GIPHY API to generate gifs of category chosen. The app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript and JQuery code.
 
-## Notes
-#### This is part of an ongoing school project. Comments and feedbacks are much appreciated! :+1:
+### Resources
+- Language
+    - HTML
+    - CSS
+    - Javascript
+- Library
+    - JQuery
+- API
+    - [GIPHY API](https://developers.giphy.com/docs/)
+- Others
+    - [Google Fonts](https://fonts.google.com/)
+    - [Font Awesome](https://fontawesome.com/?from=io)
+    - [Icons8](https://icons8.com/)
+
+### Special Thanks
+- Michael Russo
+- [Henry Chen](https://github.com/hchen651)
+
+### Notes
+This is part of an ongoing school project. Comments and feedbacks are much appreciated! :+1:
