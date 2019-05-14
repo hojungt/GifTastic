@@ -1,7 +1,7 @@
 # __Giftastic!__
 #### [__Giftastic__](https://hojungt.github.io/GifTastic/) is a dynamic web app that allows user to get a selection of gifs per his/her choice. 
 
-![](/asset/image/screenshot.png)
+![screenshot](/assets/image/screenshot.png)
 
 ### Application Feature
 1. Click on any category button at the top of page. 10 gifs will be generated below the search bar.
