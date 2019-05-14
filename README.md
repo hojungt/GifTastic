@@ -31,4 +31,4 @@ Using AJAX method to retrieve objects, the app implements GIPHY API to generate 
 - [Henry Chen](https://github.com/hchen651)
 
 ### Notes
-This is part of an ongoing school project. Comments and feedbacks are much appreciated! :+1:
+This is an ongoing project. Comments and feedbacks are appreciated!
